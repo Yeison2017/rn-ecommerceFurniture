@@ -1,6 +1,6 @@
 import { Dimensions } from "react-native";
 
-import { Colors, FontSize, Fonts } from "./interfaces";
+import { BorderRadius, Colors, FontSize, Fonts, Space } from "./interfaces";
 import { FontSource } from "expo-font";
 
 const { height, width } = Dimensions.get("window");
@@ -27,7 +27,26 @@ export const fontSize: FontSize = {
   md: 16,
   lg: 20,
   xl: 24,
+  "2.5xl": 32,
   "2xl": 44,
+};
+
+export const space: Space = {
+  xs: 10,
+  sm: 12,
+  md: 16,
+  lg: 20,
+  xl: 24,
+  "2xl": 44,
+};
+
+export const borderRadius: BorderRadius = {
+  xs: 2,
+  sm: 4,
+  md: 8,
+  lg: 16,
+  xl: 32,
+  "2xl": 64,
 };
 
 type FontsType = string | Record<keyof Fonts, FontSource>;
@@ -49,7 +68,7 @@ export const fontFamily: FontFamilyType = Object.fromEntries(
   Object.keys(fonts).map((key) => [key, key])
 ) as FontFamilyType;
 
-export const SHADOWS = {
+export const shadows = {
   small: {
     shadowColor: "#000",
     shadowOffset: {

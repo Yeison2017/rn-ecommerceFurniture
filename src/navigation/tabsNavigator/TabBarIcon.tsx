@@ -1,8 +1,8 @@
 import { StyleSheet } from "react-native";
-import Ionicons from "@expo/vector-icons/Ionicons";
 import { RouteProp } from "@react-navigation/native";
 
 import { RootTabsParams } from "../interfaces";
+import { Icon, IconNamesType } from "@/components";
 
 interface Props {
   route: RouteProp<RootTabsParams, keyof RootTabsParams>;
@@ -12,7 +12,7 @@ interface Props {
 }
 
 const TabBarIcon = ({ route, focused, color, size }: Props) => {
-  let iconName: any = "home";
+  let iconName: IconNamesType = "home";
 
   switch (route.name) {
     case "Home":
@@ -28,7 +28,7 @@ const TabBarIcon = ({ route, focused, color, size }: Props) => {
       break;
   }
 
-  return <Ionicons name={iconName} size={size} color={color} />;
+  return <Icon name={iconName} size={size} color={color} />;
 };
 
 export default TabBarIcon;

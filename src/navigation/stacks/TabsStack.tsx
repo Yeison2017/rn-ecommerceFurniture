@@ -2,8 +2,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { TabsNavigator } from "../tabsNavigator";
+import { CartScreen } from "@/screens";
+import { RootTabsStackParams } from "../interfaces";
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootTabsStackParams>();
 
 const TabsStack = () => {
   return (
@@ -12,6 +14,11 @@ const TabsStack = () => {
         <Stack.Screen
           name="Tabs"
           component={TabsNavigator}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Cart"
+          component={CartScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

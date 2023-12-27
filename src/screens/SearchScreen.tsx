@@ -1,11 +1,12 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text } from "react-native";
+
+import { SafeAreaViewLayout } from "@/components";
 
 const SearchScreen = () => {
   return (
-    <View>
+    <SafeAreaViewLayout>
       <Text>SearchScreen</Text>
-    </View>
+    </SafeAreaViewLayout>
   );
 };
 
