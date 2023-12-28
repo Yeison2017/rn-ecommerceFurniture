@@ -1,7 +1,6 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
-import { borderRadius, colors, fontFamily, fontSize, space } from "@/theme";
-import { Icon } from "@/components";
+import { colors, fontFamily, fontSize, space } from "@/theme";
 
 const Welcome = () => {
   return (
@@ -9,12 +8,6 @@ const Welcome = () => {
       <View>
         <Text style={styles.titleText}>Find The Most</Text>
         <Text style={styles.subTitleText}>Luxurious Furniture</Text>
-      </View>
-
-      <View style={styles.searchContainer}>
-        <TouchableOpacity>
-          <Icon name="search" style={styles.searchIcon} />
-        </TouchableOpacity>
       </View>
     </View>
   );
@@ -39,17 +32,5 @@ const styles = StyleSheet.create({
   subTitleText: {
     ...stl.text,
     color: colors.primary,
-  },
-  searchContainer: {
-    flexDirection: "row",
-    justifyContent: "center",
-    alignContent: "center",
-    backgroundColor: colors.secondary,
-    borderRadius: borderRadius.lg,
-    marginVertical: space.md,
-  },
-  searchIcon: {
-    marginHorizontal: space.xs,
-    color: colors.gray,
   },
 });

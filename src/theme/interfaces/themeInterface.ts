@@ -38,6 +38,7 @@ export interface BorderRadius {
   lg: number;
   xl: number;
   "2xl": number;
+  full: number;
 }
 
 export interface Fonts {

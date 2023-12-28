@@ -47,6 +47,7 @@ export const borderRadius: BorderRadius = {
   lg: 16,
   xl: 32,
   "2xl": 64,
+  full: 100,
 };
 
 type FontsType = string | Record<keyof Fonts, FontSource>;

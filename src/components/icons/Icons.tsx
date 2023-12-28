@@ -9,7 +9,8 @@ export type IconNamesType =
   | "home-outline"
   | "search-sharp"
   | "person"
-  | "person-outline";
+  | "person-outline"
+  | "camera-outline";
 
 interface Props {
   name: IconNamesType;
@@ -36,6 +37,8 @@ export const Icon = ({ name, size = 24, ...props }: Props) => {
       return <Ionicons name="person" size={size} {...props} />;
     case "person-outline":
       return <Ionicons name="person-outline" size={size} {...props} />;
+    case "camera-outline":
+      return <Ionicons name="camera-outline" size={size} {...props} />;
     default:
       break;
   }
