@@ -1,12 +1,12 @@
 import { StyleSheet, Text } from "react-native";
 
-import { SafeAreaViewLayout } from "@/components";
+import { SafeAreaLayout } from "@/components";
 
 const ProfileScreen = () => {
   return (
-    <SafeAreaViewLayout>
+    <SafeAreaLayout>
       <Text>ProfileScreen</Text>
-    </SafeAreaViewLayout>
+    </SafeAreaLayout>
   );
 };
 

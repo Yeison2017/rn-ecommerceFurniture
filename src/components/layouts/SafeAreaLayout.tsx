@@ -4,8 +4,8 @@ interface Props {
   children: React.ReactNode;
 }
 
-const SafeAreaViewLayout = ({ children }: Props) => {
+const SafeAreaLayout = ({ children }: Props) => {
   return <SafeAreaView>{children}</SafeAreaView>;
 };
 
-export default SafeAreaViewLayout;
+export default SafeAreaLayout;

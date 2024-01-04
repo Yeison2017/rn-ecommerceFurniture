@@ -1,12 +1,12 @@
 import { StyleSheet, Text } from "react-native";
 
-import { SafeAreaViewLayout } from "@/components";
+import { SafeAreaLayout, Search } from "@/components";
 
 const SearchScreen = () => {
   return (
-    <SafeAreaViewLayout>
-      <Text>SearchScreen</Text>
-    </SafeAreaViewLayout>
+    <SafeAreaLayout>
+      <Search onPress={() => {}} />
+    </SafeAreaLayout>
   );
 };
 

@@ -1,1 +1,1 @@
-export { default as SafeAreaViewLayout } from "./SafeAreaViewLayout";
+export { default as SafeAreaLayout } from "./SafeAreaLayout";
