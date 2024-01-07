@@ -1,5 +1,10 @@
 import { StyleProp, TextStyle } from "react-native";
-import { Ionicons, Fontisto, Feather } from "@expo/vector-icons";
+import {
+  Ionicons,
+  Fontisto,
+  Feather,
+  SimpleLineIcons,
+} from "@expo/vector-icons";
 
 export type IconNamesType =
   | "location-outline"
@@ -11,7 +16,13 @@ export type IconNamesType =
   | "person"
   | "person-outline"
   | "camera-outline"
-  | "grid";
+  | "grid"
+  | "add-circle"
+  | "chevron-back-circle"
+  | "heart"
+  | "star"
+  | "plus"
+  | "minus";
 
 interface Props {
   name: IconNamesType;
@@ -42,6 +53,18 @@ export const Icon = ({ name, size = 24, ...props }: Props) => {
       return <Ionicons name="camera-outline" size={size} {...props} />;
     case "grid":
       return <Ionicons name="ios-grid" size={size} {...props} />;
+    case "add-circle":
+      return <Ionicons name="add-circle" size={size} {...props} />;
+    case "chevron-back-circle":
+      return <Ionicons name="chevron-back-circle" size={size} {...props} />;
+    case "heart":
+      return <Ionicons name="heart" size={size} {...props} />;
+    case "star":
+      return <Ionicons name="star" size={size} {...props} />;
+    case "plus":
+      return <SimpleLineIcons name="plus" size={size} {...props} />;
+    case "minus":
+      return <SimpleLineIcons name="minus" size={size} {...props} />;
     default:
       break;
   }

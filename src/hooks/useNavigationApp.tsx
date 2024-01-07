@@ -1,11 +1,13 @@
 import { useNavigation } from "@react-navigation/native";
 
-import { TabsProps } from "@/navigation";
+import { TabsProps, TabsStackProps } from "@/navigation";
 
-type typeStack = "TabsProps";
+type typeStack = "TabsProps" | "TabsStackProps";
 
 type typeConditionalStack<T extends typeStack> = T extends "TabsProps"
   ? TabsProps
+  : T extends "TabsStackProps"
+  ? TabsStackProps
   : unknown;
 
 const useNavigationApp = <T extends typeStack>() => {

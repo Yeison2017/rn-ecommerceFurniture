@@ -29,6 +29,8 @@ export interface Space {
   lg: number;
   xl: number;
   "2xl": number;
+  width: number;
+  height: number;
 }
 
 export interface BorderRadius {

@@ -38,6 +38,8 @@ export const space: Space = {
   lg: 20,
   xl: 24,
   "2xl": 44,
+  width,
+  height,
 };
 
 export const borderRadius: BorderRadius = {

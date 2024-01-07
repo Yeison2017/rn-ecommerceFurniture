@@ -1,7 +1,13 @@
 import { ScrollView, StyleSheet } from "react-native";
 
 import { useNavigationApp } from "@/hooks";
-import { AppBar, Headings, SafeAreaLayout, Search } from "@/components";
+import {
+  AppBar,
+  Headings,
+  ProductRow,
+  SafeAreaLayout,
+  Search,
+} from "@/components";
 import { CarouselHome, Welcome } from "./components";
 
 const HomeScreen = () => {
@@ -18,6 +24,7 @@ const HomeScreen = () => {
 
         <CarouselHome />
         <Headings />
+        <ProductRow />
       </ScrollView>
     </SafeAreaLayout>
   );
