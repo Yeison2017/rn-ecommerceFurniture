@@ -26,11 +26,7 @@ const Rating = () => {
           <Icon name="plus" style={styles.iconButton} />
         </TouchableOpacity>
 
-        <Text style={styles.text}>
-          {"  "}
-          {count}
-          {"  "}
-        </Text>
+        <Text style={styles.text}>{count}</Text>
         <TouchableOpacity onPress={decrement}>
           <Icon name="minus" style={styles.iconButton} />
         </TouchableOpacity>
@@ -66,5 +62,6 @@ const styles = StyleSheet.create({
   text: {
     color: colors.gray,
     fontFamily: fontFamily.medium,
+    paddingHorizontal: 12,
   },
 });

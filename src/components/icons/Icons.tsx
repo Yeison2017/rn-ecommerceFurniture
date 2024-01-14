@@ -4,6 +4,7 @@ import {
   Fontisto,
   Feather,
   SimpleLineIcons,
+  MaterialCommunityIcons,
 } from "@expo/vector-icons";
 
 export type IconNamesType =
@@ -22,7 +23,10 @@ export type IconNamesType =
   | "heart"
   | "star"
   | "plus"
-  | "minus";
+  | "minus"
+  | "location"
+  | "truck-delivery"
+  | "shopping";
 
 interface Props {
   name: IconNamesType;
@@ -65,6 +69,18 @@ export const Icon = ({ name, size = 24, ...props }: Props) => {
       return <SimpleLineIcons name="plus" size={size} {...props} />;
     case "minus":
       return <SimpleLineIcons name="minus" size={size} {...props} />;
+    case "location":
+      return <Ionicons name="location-outline" size={size} {...props} />;
+    case "truck-delivery":
+      return (
+        <MaterialCommunityIcons
+          name="truck-delivery-outline"
+          size={size}
+          {...props}
+        />
+      );
+    case "shopping":
+      return <Fontisto name="shopping-bag" size={size} {...props} />;
     default:
       break;
   }
