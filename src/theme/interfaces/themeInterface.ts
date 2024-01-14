@@ -18,7 +18,29 @@ export interface FontSize {
   md: number;
   lg: number;
   xl: number;
+  "2.5xl": number;
   "2xl": number;
+}
+
+export interface Space {
+  xs: number;
+  sm: number;
+  md: number;
+  lg: number;
+  xl: number;
+  "2xl": number;
+  width: number;
+  height: number;
+}
+
+export interface BorderRadius {
+  xs: number;
+  sm: number;
+  md: number;
+  lg: number;
+  xl: number;
+  "2xl": number;
+  full: number;
 }
 
 export interface Fonts {
